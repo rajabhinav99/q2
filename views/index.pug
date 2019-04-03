@@ -1,0 +1,16 @@
+extends layout
+block content
+
+ h1 #{title} 
+
+ table(border='1')
+  tr
+   th ProdId
+   th ProName
+   th ProdPrice
+  each data, i in productdata
+   tr
+    td=data.ProdId
+    td=data.ProName  
+    td=data.ProdPrice
+ 
